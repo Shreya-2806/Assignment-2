@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab25</title>
+        <script>
+            function convert(){
+                input=parsefloat(document.forms[0].elements['input'].value);
+                inOp=document.forms[0].elements['inOp'].value;
+                outOp=document.forms[0].elements['outOp'].value;
+                if(inOp=='C' && outOp=='K'){
+                    res=input+273.15;
+                }
+                else if(inOp=='C' && outOp=='F'){
+                    res=(input*9/5)+32;
+                }
+                else if(inOp=='F' && outOp=='C'){
+                    res=(input-32)*5/9;
+                }
+                else if(inOp=='F' && outOp=='K'){
+                    res=(input-32)*(5/9)+273.15;
+                }
+                else if(inOp== 'K'&& outOp=='F'){
+                    res=(input-273.15)*(9/5)+32;
+                } 
+                else if(inOp=='K' && outOp=='C'){
+                    res=input-273.15;
+                } 
+                else{
+                    res=input;
+                } 
+                document.forms[0].elements['output'].value=res; 
+            }
+    
+        </script>
+    </head>
+    <body>
+        <form method="post">
+            <input type="number" name="input" required/>
+            <select name="inOp">
+                <option value="K">Kelvin</option>
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+            </select><br>
+            <input type="text" name="output"/>
+            <select name="outOp">
+                <option value="K">Kelvin</option>
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+            </select><br>
+            <input type="button" value="Convert" onclick="convert()"/>
+        </form>
+    </body>
+</html>

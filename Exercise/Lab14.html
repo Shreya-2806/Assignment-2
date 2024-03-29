@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab14</title>
+        <style>
+            div{
+                height:200px;
+                width:200px;
+                background-color:blueviolet;
+                color:white;
+                font-size:40px;
+                font-weight:700;
+                margin:10px;
+            }
+            .container{
+                display:flex;
+                height:auto;
+                width:auto;
+                background-color: pink;
+                color:black;
+                flex-wrap:wrap;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-content:space-evenly;
+            }
+            .container div{
+                display:flex;
+                height:auto;
+                width:auto;
+                justify-content: center;
+                align-content:space-evenly;
+                align-items:center;
+            }
+            .d1{
+                position:relative;
+                align-content: space-evenly;
+                align-items: center;
+            }
+            .d1 img{
+                height:100%;
+                width:100%;
+                position:absolute;
+            }
+        </style>
+    </head>
+    <body>
+	    <div class="container">
+		    <div class="d1">
+                <img src="images/1.jpeg">
+                <span style="z-index:9;">DEEDS ARE THE BEST WORSHIP</span>
+            </div>
+            <div class="d1">
+                <img src="images/2.jpeg">
+                <span style="z-index:9;">YOU NEVER LOSE: EITHER YOU WIN OR YOU LEARN</span>
+            </div>
+            <div class="d1">
+                <img src="images/3.jpeg">
+                <span style="z-index:9;">Try Try But Don't Cry</span>
+            </div>
+            <div class="d1">
+                <img src="images/4.jpeg">
+                <span style="z-index:9;">Always Be Happy</span>
+            </div>
+		</div>
+    </body>
+</html>

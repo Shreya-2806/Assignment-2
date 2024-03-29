@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab11</title>
+    </head>
+    <body>
+        <h2 align="center">Feedback</h2>
+        <table align="center">
+            <form name="feedback" method="get">
+                <tr>
+                    <td>
+                        <label for="uname">Full Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="uname" placeholder="Enter name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ptype">Product Type</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="ptype" value="os">Operating System
+                        <input type="checkbox" name="ptype" value="av">Antivirus
+                        <input type="checkbox" name="ptype" value="bd">Bios Driver
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="prd">Product Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="prd"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">Purchase Date</label>
+                    </td>
+                    <td>
+                        <input type="date" name="date"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="rate">Rating</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="rate" value="1">*
+                        <input type="radio" name="rate" value="2">**
+                        <input type="radio" name="rate" value="3">***
+                        <input type="radio" name="rate" value="4">****
+                        <input type="radio" name="rate" value="5">*****
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="prb">Problem</label>
+                    </td>
+                    <td>
+                        <input type="text" name="prb" list="l1">
+                        <datalist id="l1">
+                            <option>not working</option>
+                            <option>hanging the system</option>
+                            <option>working but slowed my system</option>
+                            <option>none</option>
+                            <option>others(please specify)</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="feedback">Feedback</label>
+                    </td>
+                    <td>
+                        <textarea rows="2" cols="20" name="feedback" placeholder="Enter feedback"></textarea>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2">
+                        <input type="reset" value="Reset"/>
+                        <input type="submit" value="Submit"/>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>
