@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+ 		<title>Amazon.home</title>
+		<link rel="stylesheet" href="style.css">
+		<style>
+			.about-section {
+				padding: 40px;
+  				text-align: center;
+  				background-color: #474e5d;
+				background-image:url('images/background.jpg');
+				background-attachement:cover;
+				background-size:300px 200px;
+  				color: white;
+				}
+			.contact-info {
+				margin: 20px;
+				}
+			.contact-form {
+				margin: 20px;
+				
+				}
+
+			form {
+				margin-top: 20px;
+				}
+			label {
+				display: block;
+				margin-bottom: 5px;
+				text-align:left;
+				}
+
+			input[type="text"], input[type="email"],textarea {
+				border: 1px solid #333;
+				padding: 5px;
+				width: 100%;
+			}
+
+			input[type="submit"] {
+				background-color: #333;
+				border: none;
+				color: #fff;
+				padding: 5px 10px;
+				cursor: pointer;
+				}
+			
+
+
+			@media (max-width: 600px) {
+				.contact-info, .contact-form, img {
+					width: 100%;
+					}
+					}
+		</style>
+    	</head>
+	<body>
+		<table border="1" width="100%" >
+			<tr>
+				
+        				<div class="topnav">
+				<h1 align="left"><img src="images/amazon.jpg" width="10%"</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  				<a href="home.html">Home</a>
+  				<a href="about.html">About Us</a>
+  				<a href="product.html">Products</a>
+  				<a href="contact.html">Contact Us</a>
+				</div>
+			</tr>
+			<tr >
+				 <div class="about-section">
+  					<h1>Contact Us</h1>
+				</div>
+				<table border="0">
+				<tr>
+					<td><p align="center"><img src="images/service.png" width="15%" ></p></td>
+					<td><p align="center"><img src="images/growth.png" width="15%" ></p></td>
+					<td><p align="center"><img src="images/support.png" width="15%" ></p></td>
+					<td><p align="center"><img src="images/language.png" width="15%" ></p></td>
+				</tr>
+				<tr>
+					<td width="25%">
+						<h2 align="center">Save time and effort</h2>
+						<p align="center">Reduce your customer service workload, even outside of working hours (e.g. evenings, weekends, holidays).</p>
+					</td>
+					<td width="25%">
+						<h2 align="center">Improve performance</h2>
+						<p align="center">Reduce A-to-Z Guarantee claims, Order Defect Rates (ODR), and negative reviews.</p>
+					</td>
+					<td width="25%">
+						<h2 align="center">24/7 Support</h2>
+						<p align="center">Provide real-time support for customers in their local time zone, even outside of working hours—including evenings, weekends, and holidays.</p>
+					</td>
+					<td width="25%">
+						<h2 align="center">Local language</h2>
+						<p align="center">Provide customer service in the local language of the buyers, effectively eliminating language barriers.</p>
+					</td>
+				</tr>
+			    </table>
+			<table margin="0" width="100%">
+				<tr>
+					<td width="50%">
+						<div class="contact-info">
+							<h3>CALL US</h3>
+							<p>1 (234) 567-891</p>
+							<h3>EMAIL</h3>
+							<p>amazon@gmail.com</p>
+						</div>
+					</td>
+					<td width="50%">
+						 <div class="contact-form">
+							<form name="Message" method="post" action="mailto:shreya280904@google.com">
+				     			<fieldset>
+				       			<legend>GET IN TOUCH</legend>
+								<label for="name">Name</label>
+								<input type="text" id="name" name="name" placeholder="Enter you name"><br><br>
+								<label for="email">Email Address</label>
+								<input type="email" id="email" name="email" placeholder="Enter email"><br><br>
+								<label for="mess">Message</label>
+								<textarea rows="2" cols="20" name="mess" placeholder="Message"></textarea><br><br>
+								<input type="submit" value="SUBMIT"/>
+				    			</fieldset>
+							</form>
+						</div>
+					</td>
+				</tr>
+			</table>
+			
+			</tr>
+			<tr>
+				<div class="footer">
+					<font size="-1">
+					<p align="left">&copy1996-2024 Amazon.com, Inc. or its affiliates</p></font>
+				</div>
+			</tr>
+    		</table>
+	</body>
+</html>

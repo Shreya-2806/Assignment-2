@@ -1,0 +1,1 @@
+<html><head><title>First JavaScript Page</title></head><body><h1>First JavaScript WebPage</h1><script type="text/javascript"> document.write("<hr>");document.write(“Welcome to JS");document.write("<hr>");</script></body></html>
